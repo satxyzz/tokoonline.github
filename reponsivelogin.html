@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+  
+	<div class="container">                             
+		<h1 class="label" style="text-align: center;"> Login to aysar store</h1>
+		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Masukkan email atau nomer hp</div>
+			<input autocomplete="off" type="text" name="email" placeholder="email atau nomer hp">
+			<div id="email_error">Coba cek kembali email atau nomer hp anda</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password" placeholder="password">
+			<div id="pass_error">Coba cek kembali Password anda</div>
+			<button type="submit">Login</button>
+			<p style="text-align: center;">lupa akun ?<a href="http://127.0.0.1:3000/register.html" class="herf">         Registrasi akun</a></p>
+			
+		</form>
+	</div>	
+	<script src="scriptlogin.js"></script>
+</body>
+</html>
